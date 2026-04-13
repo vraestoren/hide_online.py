@@ -20,7 +20,6 @@ class HideOnline:
 		self.title_id = "4A02"
 		self.session_ticket = None
 
-
 	def _post(self, endpoint: str, data: dict = None) -> dict:
 		return self.session.post(f"{self.api}{endpoint}", json=data).json()
 
